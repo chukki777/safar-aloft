@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safar Aloft</title>
+<meta name="description" content="Safar Aloft: prayer times for the flight deck. Support and privacy policy.">
+<link rel="icon" href="icon.png">
+<style>
+:root{
+  --bg:#F5F3EE; --panel:#FFFFFF; --line:#E2DED5; --text:#1B1F24; --mute:#5A6370; --accent:#0F7FA0; --go:#2E9E52;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#04060A; --panel:#0B1016; --line:#1A222C; --text:#DFE6EE; --mute:#A6B1BE; --accent:#58D0E8; --go:#6FE08A;
+}}
+:root[data-theme="dark"]{--bg:#04060A;--panel:#0B1016;--line:#1A222C;--text:#DFE6EE;--mute:#A6B1BE;--accent:#58D0E8;--go:#6FE08A}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.55;padding:48px 16px 64px}
+main{max-width:720px;margin:0 auto}
+.hero{display:flex;gap:20px;align-items:center;margin-bottom:28px}
+.hero img{width:96px;height:96px;border-radius:22px;flex:none;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+h1{font-size:34px;line-height:1.15}
+.tag{color:var(--mute);font-size:18px;margin-top:4px}
+section{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-top:18px}
+h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:10px}
+p+p,ul+p,p+ul{margin-top:10px}
+ul{padding-left:20px}
+li{margin:4px 0}
+a{color:var(--accent)}
+.mail{font-size:18px;font-weight:600}
+.doa{color:var(--mute);font-style:italic}
+footer{color:var(--mute);font-size:13px;margin-top:28px;text-align:center}
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <img src="icon.png" alt="Safar Aloft icon: an eight-pointed star over the horizon">
+    <div>
+      <h1>Safar Aloft</h1>
+      <div class="tag">Prayer times for the flight deck</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>What it does</h2>
+    <p>Safar Aloft calculates Muslim prayer times on a moving aircraft. Enter where you are and where you land, with waypoints from the flight plan for the turns, and it follows the route, corrects for altitude, and shows each prayer time in UTC with an honest plus-or-minus. It also gives the qibla and the sun's direction relative to the aircraft. It works entirely offline.</p>
+    <p class="doa">Safar Aloft is free, with no ads and no tracking. If it helps you pray on your journey, please remember the developer in your doa.</p>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Questions, a time that looks wrong, or an idea: write to</p>
+    <p><a class="mail" href="mailto:safar.aloft@icloud.com">safar.aloft@icloud.com</a></p>
+    <p>The quickest way is <strong>Settings › About Safar Aloft › Send feedback</strong> inside the app: it opens an email with the app version and the flight you entered, so a reported time can be checked exactly.</p>
+  </section>
+
+  <section>
+    <h2>Please note</h2>
+    <p>Times are calculated estimates, for information only. Not for navigation. For rulings on prayer while travelling, follow your own scholars.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy policy</h2>
+    <p>Effective 13 November 2026.</p>
+    <p>Safar Aloft collects no personal data.</p>
+    <ul>
+      <li>The app makes no network connections. It sends nothing to the developer or to anyone else.</li>
+      <li>What you enter (waypoints, times, airports, settings) is stored only on your device, so it is still there next time you open the app. It is included in your device's own backups if you have those turned on, and is removed when you delete the app.</li>
+      <li>The app does not use your location, contacts, photos, camera, microphone or any other personal information.</li>
+      <li>There are no ads, no analytics, no tracking and no third-party code that collects data.</li>
+      <li>If you choose to send feedback, your email app sends a message you can read and edit first. The developer uses it only to reply and to check the calculation, and does not share it.</li>
+    </ul>
+    <p>If this policy ever changes, the new version will be published on this page with a new date.</p>
+  </section>
+
+  <footer>Airport data: OurAirports (public domain). Arabic typeface: Amiri, SIL Open Font License.</footer>
+</main>
+</body>
+</html>
